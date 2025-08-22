@@ -35,6 +35,8 @@ public class PlayerEventListener implements Listener {
         
         // Only handle when player starts sneaking (not when they stop)
         if (!event.isSneaking()) {
+            // Cuando deja de presionar shift -> desactivar arrastre
+            player.setSwimming(false);
             return;
         }
         
@@ -61,6 +63,9 @@ public class PlayerEventListener implements Listener {
                 data.setCrouching(true);
                 data.resetPressCount();
                 
+                // --- NUEVO: Forzar arrastre/buceo ---
+                player.setSwimming(true);
+                
                 // Send crouch message
                 messageHandler.sendCrouchMessage(player);
                 
@@ -70,7 +75,7 @@ public class PlayerEventListener implements Listener {
                 }
                 
                 if (configManager.isDebugEnabled()) {
-                    player.sendMessage("§7Debug: Entered crouch state");
+                    player.sendMessage("§7Debug: Entered crouch + crawl state");
                 }
             }
         }
@@ -93,6 +98,9 @@ public class PlayerEventListener implements Listener {
             data.setCrouching(false);
             data.resetPressCount();
             
+            // --- NUEVO: desactivar arrastre ---
+            player.setSwimming(false);
+            
             // Send stand message
             messageHandler.sendStandMessage(player);
             
@@ -102,7 +110,7 @@ public class PlayerEventListener implements Listener {
             }
             
             if (configManager.isDebugEnabled()) {
-                player.sendMessage("§7Debug: Exited crouch state");
+                player.sendMessage("§7Debug: Exited crouch/crawl state");
             }
         }
     }
