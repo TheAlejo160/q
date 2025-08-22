@@ -1,0 +1,21 @@
+name: TeroCraftCrouch
+version: 1.0.0
+main: com.terocraft.crouch.TeroCraftPlugin
+api-version: 1.19
+author: TeroCraft
+description: A plugin that allows players to crouch by pressing shift multiple times
+
+commands:
+  terocrouchreload:
+    description: Reload the plugin configuration
+    usage: /terocrouchreload
+    permission: terocraft.crouch.reload
+    permission-message: You don't have permission to use this command
+
+permissions:
+  terocraft.crouch.use:
+    description: Allows player to use the crouch feature
+    default: true
+  terocraft.crouch.reload:
+    description: Allows reloading the plugin configuration
+    default: op

@@ -1,0 +1,7 @@
+/workspaces/q/src/main/java/com/terocraft/crouch/models/PlayerCrouchData.java
+/workspaces/q/src/main/java/com/terocraft/crouch/listeners/PlayerEventListener.java
+/workspaces/q/src/main/java/com/terocraft/crouch/managers/ConfigManager.java
+/workspaces/q/src/main/java/com/terocraft/crouch/TeroCraftPlugin.java
+/workspaces/q/src/main/java/com/terocraft/crouch/managers/PlayerDataManager.java
+/workspaces/q/src/main/java/com/terocraft/crouch/managers/MessageHandler.java
+/workspaces/q/src/main/java/com/terocraft/crouch/listeners/PlayerJumpEvent.java

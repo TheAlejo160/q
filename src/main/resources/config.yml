@@ -1,0 +1,24 @@
+# TeroCraft Crouch Plugin Configuration
+plugin:
+  enabled: true
+  
+crouch:
+  # Number of shift presses required to crouch
+  shift-presses: 5
+  # Maximum time between presses (milliseconds)
+  press-timeout: 2000
+  # Enable debug messages
+  debug: false
+
+messages:
+  # Message when player starts crouching
+  crouch-message: "&7&l[&c&lTeroCraft&7&l] &fTe estas agachando"
+  # Message when player stands up (optional)
+  stand-message: "&7&l[&c&lTeroCraft&7&l] &fTe has levantado"
+  
+sounds:
+  # Play sound on crouch
+  crouch-sound: "BLOCK_NOTE_BLOCK_BASS"
+  # Play sound on stand
+  stand-sound: "BLOCK_NOTE_BLOCK_BELL"
+  enabled: true

@@ -1,0 +1,7 @@
+com/terocraft/crouch/listeners/PlayerJumpEvent.class
+com/terocraft/crouch/managers/ConfigManager.class
+com/terocraft/crouch/models/PlayerCrouchData.class
+com/terocraft/crouch/TeroCraftPlugin.class
+com/terocraft/crouch/listeners/PlayerEventListener.class
+com/terocraft/crouch/managers/MessageHandler.class
+com/terocraft/crouch/managers/PlayerDataManager.class
